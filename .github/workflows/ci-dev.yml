@@ -5,7 +5,7 @@ on:
       - 'ROBO-**'
 jobs:
   Build:
-    uses: raghudevopsb84/roboshop-github-actions/.github/workflows/ci-main.yml@main
+    uses: udayach123/roboshop-github-actions/.github/workflows/ci-main.yml@main
     with:
       appType: 'nodejs'
 
