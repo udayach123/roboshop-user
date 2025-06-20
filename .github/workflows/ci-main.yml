@@ -9,7 +9,7 @@ jobs:
     uses: udayach123/roboshop-github-actions/.github/workflows/ci-main.yml@main
     with:
       appType: 'nodejs'
-#      appName: 'user'
-#    secrets:
-#      vault_token: ${{ secrets.vault_token }}
+      appName: 'user'
+    secrets:
+       vault_token: ${{ secrets.vault_token }}
 
