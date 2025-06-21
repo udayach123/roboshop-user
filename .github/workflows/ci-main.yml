@@ -10,6 +10,6 @@ jobs:
     with:
       appType: 'nodejs'
       appName: 'user'
-    secrets:
-       vault_token: ${{ secrets.vault_token }}
+    ssecrets:
+      azuresecrets: ${{ secrets.azuresecrets }}
 
