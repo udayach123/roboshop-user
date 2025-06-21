@@ -10,6 +10,6 @@ jobs:
     with:
       appType: 'nodejs'
       appName: 'user'
-    ssecrets:
+    secrets:
       azuresecrets: ${{ secrets.azuresecrets }}
 
