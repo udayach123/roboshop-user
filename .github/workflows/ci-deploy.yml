@@ -1,0 +1,15 @@
+name: User-Deploy
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'main'
+jobs:
+  Build:
+    uses: golive123/roboshop-github-actions/.github/workflows/aks-deploy.yml@main
+    with:
+      appName: 'user'
+      appEnv: 'dev'
+      resourceGroup: 'ukwest-dev'
+    secrets:
+      azuresecrets: ${{ secrets.azuresecrets }}
